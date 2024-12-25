@@ -1,0 +1,80 @@
+.contact-table {
+    width: 80vw;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-table th,
+.contact-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-table th {
+    width: 80vw;
+    background-color: rgb(74, 114, 114);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.contact-table tr:hover {
+    background-color: #f1f7f4;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-table img {
+    border-radius: 5px;
+    max-width: 40px;
+    height: auto;
+}
+
+.contact-table td:first-child img {
+    border-radius: 50%;
+}
+
+.contact-table td {
+    color: #333;
+}
+
+.contact-table caption {
+    caption-side: top;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.addContact {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(30, 55, 7);
+    box-shadow:rgb(70, 120, 23);
+    cursor: pointer;
+  }
+  
+  .addContact:hover {
+    background-color: rgb(70, 120, 23);
+  }
+  
+  .addContact:active {
+    box-shadow:rgb(30, 55, 7)
+  }
+  
