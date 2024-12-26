@@ -27,8 +27,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <button class="addContact" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Add
-        Contact</button>
+    <div class="nav">
+        <button class="addContact" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Add
+            Contact</button>
+        <div class="search">
+            <form class="form-wrapper-2 cf">
+                <input type="text" id="inputsearch" placeholder="Search..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
     <?php if (!empty($contacts)): ?>
     <table class="contact-table">
         <thead>

@@ -1,5 +1,10 @@
+*{
+    margin: 0;
+    padding: 3px;
+
+}
 .contact-table {
-    width: 80vw;
+    width: 99vw;
     border-collapse: collapse;
     margin: 20px 0;
     font-family: Arial, sans-serif;
@@ -78,3 +83,9 @@
     box-shadow:rgb(30, 55, 7)
   }
   
+
+  .nav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
