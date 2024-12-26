@@ -2,10 +2,10 @@
 
 class Connection {
     // public $conn;
-    private string $servename = "localhost"; 
-    private string $username = "root";  
-    private string $password = "";  
-    private string $dbname = "YouContact"; 
+    private $servename = "localhost"; 
+    private $username = "root";  
+    private $password = "";  
+    private $dbname = "YouContact"; 
 
     public function connect() {
         $conn = null;
