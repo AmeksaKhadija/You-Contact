@@ -58,8 +58,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <td><?php echo $contact['email']; ?></td>
                 <td><?php echo $contact['telephone']; ?></td>
                 <td>
-                    <form action="edit.php" method="POST" style="display:inline;">
-                        <input type="hidden" name="edit_id" value="">
+                    <form action="edit.php" method="GET" style="display:inline;">
+                        <input type="hidden" name="edit_id" value="<?php echo $contact['id']; ?>">
                         <button type="submit" style="border: none; background: none; cursor: pointer;">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </button>

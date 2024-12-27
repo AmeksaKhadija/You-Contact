@@ -20,5 +20,8 @@ class Connection {
     }
 }
 
+// $test = new Connection();
+// $test->connect();
+
 
 ?>

@@ -64,7 +64,26 @@ class Contact {
         }
     }
 
-    
+    public function updateContact($id, $data) {
+        $query = "UPDATE contacts SET nom = :nom, prenom = :prenom, email = :email, telephone = :telephone WHERE id = :id";
+        $stmt = $this->db->prepare($query); 
+        $stmt->execute([
+            ':nom' => $data['nom'],
+            ':prenom' => $data['prenom'],
+            ':email' => $data['email'],
+            ':telephone' => $data['telephone'],
+            ':id' => $id,
+        ]);
+    }
 
+
+    public function getContactById($id) {
+        $query = "SELECT * FROM contacts WHERE id = :id";
+        $stmt = $this->db->prepare($query);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+    
 }
 ?>
